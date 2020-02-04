@@ -45,8 +45,6 @@ APRIL is a pregnancy home care product.  By downloading the app, and connecting 
 * Wi-Fi enabled assessment tools and their related software
 
 
-[Wireframe Diagram]()
+[![Wireframe]()]()
 
-
-[![Entity Relationship Diagram]](erd-april.png)](erd-april.pdf)
-
+[![ERD](erd-april.png)](erd-april.pdf)
