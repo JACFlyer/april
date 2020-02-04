@@ -1,0 +1,16 @@
+<mxfile type="github" version="12.6.4" etag="tF_4bDh2y8e7TFtcd-LA" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 Edge/18.18362" modified="2020-02-02T22:18:04.104Z" host="www.draw.io">
+  <diagram id="QA4zAtXP2KbfS_ILf77u" name="Page-1">
+    <mxGraphModel grid="1" shadow="0" math="0" pageHeight="1100" pageWidth="850" pageScale="1" page="1" fold="1" arrows="1" connect="1" tooltips="1" guides="1" gridSize="10" dy="612" dx="1102">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="bTgTYD4hz_SO6YWEeZ2b-1" value="" parent="1" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shadow=0;dashed=0;strokeWidth=1;shape=mxgraph.android.phone2;strokeColor=#c0c0c0;" vertex="1">
+          <mxGeometry as="geometry" x="20" y="490" width="440" height="840"/>
+        </mxCell>
+        <mxCell id="bTgTYD4hz_SO6YWEeZ2b-2" value="" parent="1" style="strokeWidth=1;html=1;shadow=0;dashed=0;shape=mxgraph.android.action_bar_landscape;fillColor=#1A1A1A;strokeColor=#c0c0c0;strokeWidth=2;fontColor=#FFFFFF;" vertex="1">
+          <mxGeometry as="geometry" x="40" y="620" width="400" height="50"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
