@@ -48,5 +48,5 @@ APRIL is a pregnancy home care product.  By downloading the app, and connecting 
 [Wireframe Diagram]()
 
 
-[Entity Relationship Diagram]()
+[![Entity Relationship Diagram](erd-april.png)](erd-april.pdf)
 
