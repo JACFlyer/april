@@ -1,3 +1,3 @@
 # Wireframe Diagram
 
-[![Wireframe](.png)](.pdf)
+[![Wireframe](april-wireframe.png)](april-wireframe.pdf)
