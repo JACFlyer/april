@@ -77,6 +77,6 @@ client's portal for monitoring and response purposes.
 
 * Fetal Heart Rate monitoring software and Wi-Fi enabled emitter, [Edan SDI Ultrasonic Pocket Doppler](https://fetaldoppler.net/fd340-fetal-doppler.html).  This API and device support the critical project functionality of April.
  
-* Cervical Camera software and Wi Fi enabled device, [SVAKOM Siime Inteligent Camera](https://svakon.net/Siime).  This API and device support the critical project functionality of April.
+* Cervical Camera software and Wi Fi enabled device, [SVAKOM Siime Inteligent Camera](https://www.svakom.net/Siime).  This API and device support the critical project functionality of April.
 
 * Abdominal Ultrasound software and Wi Fi enabled transducer, [MobiSante](http://www.mobisante.com/).  This API and device support advanced functionality of April.
