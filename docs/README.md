@@ -26,7 +26,7 @@ client's portal for monitoring and response purposes.
 [User Stories](user-stories.md)
 
 
-# Features
+## Features
 * History
   Mom will be prompted to enter medical history relevant to the pregnancy.
 
@@ -55,7 +55,7 @@ client's portal for monitoring and response purposes.
   When activated, this feature places a call to 911 and the designated emergency contacts.
   
 
-# Stretch Goals
+## Stretch Goals
 * Cervical Scan  
   A Wi Fi enabled camera probe will relay images of the cervical effacement and dilitation to the app for consideration by the medical provider. This will provide an assessment of labor progression.   
 
