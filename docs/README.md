@@ -79,4 +79,4 @@ client's portal for monitoring and response purposes.
  
 * Cervical Camera software and Wi Fi enabled device, [SVAKOM Siime Inteligent Camera](https://svakon.net/Siime).  This API and device support the critical project functionality of April.
 
-* Abdominal Ultrasound software and Wi Fi enabled transducer, [MobiSante](https://mobisante.com)  This API and device support advanced functionality of April.
+* Abdominal Ultrasound software and Wi Fi enabled transducer, [MobiSante](http://www.mobisante.com/).  This API and device support advanced functionality of April.
