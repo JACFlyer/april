@@ -66,6 +66,12 @@ client's portal for monitoring and response purposes.
   This feature allow mom to tap the provider as a request for the review of her current data and guidance.
 
 
+### [Wireframe Diagram](wireframe.md)
+
+
+### [Entity Relationship Diagram](erd.md)  
+
+
 ## External Services        
 * Google GPS for 911 connection
 
@@ -74,9 +80,3 @@ client's portal for monitoring and response purposes.
 * Abdominal Ultrasound software and Wi Fi enabled transducer
  
 * Cervical Camera software and Wi Fi enabled device
-
-
-### [Wireframe Diagram](wireframe.md)
-
-
-### [Entity Relationship Diagram](erd.md)  
