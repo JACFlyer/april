@@ -74,8 +74,14 @@ client's portal for monitoring and response purposes.
 
 ## External Services        
 * Google GPS for 911 connection
+  Bandwidth 911 Access
+  [Bandwidth 911 Access](bandwidth.com/911)
+  The app is not dependent on this function.
 
 * Fetal Heart Rate monitoring software and Wi-Fi enabled emitter
+  Edan SDI Ultrasonic Pocket Doppler
+  www.fetaldoppler.net/fd340-fetal-doppler.html/
+  
  
 * Abdominal Ultrasound software and Wi Fi enabled transducer
  
