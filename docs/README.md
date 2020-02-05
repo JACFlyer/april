@@ -73,15 +73,10 @@ client's portal for monitoring and response purposes.
 
 
 ## External Services        
-* Google GPS for 911 connection
-  [Bandwidth 911 Access](https://bandwidth.com/911)
-  The app is not dependent on this function.
+* Google GPS for 911 connection, [Bandwidth 911 Access](https://bandwidth.com/911).  April is not dependent on this function.
 
-* Fetal Heart Rate monitoring software and Wi-Fi enabled emitter
-  Edan SDI Ultrasonic Pocket Doppler
-  www.fetaldoppler.net/fd340-fetal-doppler.html/
+* Fetal Heart Rate monitoring software and Wi-Fi enabled emitter, [Edan SDI Ultrasonic Pocket Doppler](https://fetaldoppler.net/fd340-fetal-doppler.html/).  This API and device support the critical functionality of April.
   
- 
 * Abdominal Ultrasound software and Wi Fi enabled transducer
  
 * Cervical Camera software and Wi Fi enabled device
