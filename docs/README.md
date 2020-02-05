@@ -74,8 +74,7 @@ client's portal for monitoring and response purposes.
 
 ## External Services        
 * Google GPS for 911 connection
-  Bandwidth 911 Access
-  [Bandwidth 911 Access](bandwidth.com/911)
+  [Bandwidth 911 Access](https://bandwidth.com/911)
   The app is not dependent on this function.
 
 * Fetal Heart Rate monitoring software and Wi-Fi enabled emitter
