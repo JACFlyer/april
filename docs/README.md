@@ -1,4 +1,4 @@
-## Description
+## Overview
 _Applied Pregnancy Resilience Informatics_
 
 The onset of labor can be difficult to determine for a mom to be.  Knowing the right time to go to
@@ -17,7 +17,7 @@ implemented during a routine pre-natal visit by the attending provider who will 
 client's portal for monitoring and response purposes. 
 
 
-## Intended users
+## Intended Users
 * Pregnant women at various stages of gestation  
 * Client spouses and support team members  
 * OB/GYN and CNM medical providers  
@@ -66,7 +66,7 @@ client's portal for monitoring and response purposes.
   This feature allow mom to tap the provider as a request for the review of her current data and guidance.
 
 
-## External Services/Data        
+## External Services        
 * Google GPS for 911 connection
 
 * Fetal Heart Rate monitoring software and Wi-Fi enabled emitter
