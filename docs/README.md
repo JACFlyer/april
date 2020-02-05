@@ -1,17 +1,27 @@
 ## Description
-APRIL stands for _Pregnancy_ _Resilience_ _Informatics_.
+Applied_Pregnancy_Resilience_Informatics_
 
-The onset of labor can be difficult to determine for a mom to be.  Knowing when to go to the hospital can be just as obscure.  At times a provider might send her home with instructions on when to return.  For a first-time mom, this can be scary and frustrating.
+The onset of labor can be difficult to determine for a mom to be.  Knowing the right time to go to
+the hospital can make the difference between having a successful self-designed birth plan
+and being admitted before planned.  At times a labor and delivery provider might simply send
+her home, frustrated, with instructions on when to return.  This is often a waste of time and
+resources for both the hospital and the client.
 
-APRIL is a pregnancy home care product.  By downloading the app, and connecting APRIL tools to her smart device, the patient can record vital pregnancy information and share it with her provider.
+It is the intention of this project to develop an evidenced based application that provides
+accurate and safe coaching to the client regarding her stage of labor.  In so doing,
+the application will promote the wellness of both the mother and child.
+
+Using the product involves downloading the app to ones smart device (cell phone or tablet),
+and linking external clinical tools to the program.  The entire April Suite will be
+implemented during a routine pre-natal visit by the attending provider who will have access to the
+client's portal for monitoring and response purposes. 
 
 
 ## Intended users
-* Pregnant women at term and their spouses/partners  
+* Pregnant women at various stages of gestation  
+* Client spouses and support team members  
+* OB/GYN and CNM medical providers  
 * Community pregnancy support service providers  
-* Natural birth candidates
-* Clinics in HPSA designated areas
-* University/college training programs
 
 
 [User Stories](user-stories.md)
