@@ -75,8 +75,8 @@ client's portal for monitoring and response purposes.
 ## External Services        
 * Google GPS for 911 connection, [Bandwidth 911 Access](https://bandwidth.com/911).  April is not dependent on this function.
 
-* Fetal Heart Rate monitoring software and Wi-Fi enabled emitter, [Edan SDI Ultrasonic Pocket Doppler](https://fetaldoppler.net/fd340-fetal-doppler.html).  This API and device support the critical functionality of April.
+* Fetal Heart Rate monitoring software and Wi-Fi enabled emitter, [Edan SDI Ultrasonic Pocket Doppler](https://fetaldoppler.net/fd340-fetal-doppler.html).  This API and device support the critical project functionality of April.
  
-* Cervical Camera software and Wi Fi enabled device, [SVAKOM Siime Inteligent Camera](https://svakon.net/Siime).  This API and device support the critical functionality of April.
+* Cervical Camera software and Wi Fi enabled device, [SVAKOM Siime Inteligent Camera](https://svakon.net/Siime).  This API and device support the critical project functionality of April.
 
-* Abdominal Ultrasound software and Wi Fi enabled transducer, [MobiSante](https://mobisante.com/products/product-overview/)
+* Abdominal Ultrasound software and Wi Fi enabled transducer, [MobiSante](https://mobisante.com/products/product-overview/)  This API and device support advanced functionality of April.
