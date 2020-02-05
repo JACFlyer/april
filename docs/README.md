@@ -27,7 +27,7 @@ client's portal for monitoring and response purposes.
 
 
 ## Features
-* History
+* History  
   Mom will be prompted to enter medical history relevant to the pregnancy.
 
 * Contraction Counter  
@@ -37,12 +37,12 @@ client's portal for monitoring and response purposes.
   Mom will be able to record the onset, duration, quality, intensity, location, change and resolution of pain.
 
 * Fetal Heart Rate Monitor  
-  There is an option for either episodic or continuous FHR monitoring with a Wi-Fi enabled device attached to the abdomen.  Continuous recordings will be saved.  An API for the device will be applied to the app.  The assessment tool will be linked to the program.
+  There is an option for either episodic or continuous FHR monitoring with a Wi-Fi enabled device attached to the abdomen.
 
-* Vaginal Mucous Changes
+* Vaginal Mucous Changes  
   This feature allows mom to document any changes to vaginal mucous.
 
-* Bloody Show
+* Bloody Show  
   Mom will indicate the instance and character of vaginal bleeding.  
 
 * Water-Break Moment  
@@ -51,7 +51,7 @@ client's portal for monitoring and response purposes.
 * Trends  
   All entered data will be analyzed in sync and trend lines for each will be displayed in relation to the others. 
 
-* Emergency Alert
+* Emergency Alert  
   When activated, this feature places a call to 911 and the designated emergency contacts.
   
 
@@ -62,7 +62,7 @@ client's portal for monitoring and response purposes.
 * Abdominal Ultrasound  
   A Wi Fi enabled ultrasound transducer will allow mom to capture images of fetal presentation and the presence of amniotic fluid for the provider to consider.
 
-* Provider Tap
+* Provider Tap  
   This feature allow mom to tap the provider as a request for the review of her current data and guidance.
 
 
