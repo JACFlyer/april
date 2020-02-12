@@ -2,31 +2,41 @@ package edu.cnm.deepdive.april.model.entity;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
+import androidx.room.ForeignKey;
 import androidx.room.Index;
 import androidx.room.PrimaryKey;
 
-public class Labor {
 
 // Creating PARENT Entity
 
-  @Entity(
-      indices = {
-          @Index(value = "name", unique = true)
-      }
-  )
-  public class ClientProfile {
+@Entity(
+    foreignKeys = {
+        @ForeignKey(
+            entity = Assessment.class,
+            parentColumns = "assessment_id",
+            childColumns = "assessment_id"
+        )
+    },
+    indices = {
+        @Index(value = "labor_id", unique = true)
+    }
+)
 
-    // Primary Key of Client Profile Entity
 
-    @ColumnInfo(name = "client_id")
+
+
+  public class Labor {
+
+
+    // Primary Key of Labor Entity
+
+    @ColumnInfo(name = "labor_id")
     @PrimaryKey(autoGenerate = true)
-    private long clientId;
-
-    // Attributes of Client Profile Entity
+    private long laborId;
 
 
-    @ColumnInfo(name = "vaginal_discharge", index = true)
-    private int vaginalDischarge;
+
+    // Attributes of Labor Entity
 
 
     @ColumnInfo(name = "rupture_of_membranes", index = true)
@@ -37,4 +47,3 @@ public class Labor {
     private boolean contraction;
 
   }
-}
