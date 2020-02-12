@@ -17,28 +17,30 @@ import java.util.List;
 
 @Dao
 public interface ClientProfileDao {
-
-
-  //CRUD - Create
-  @Insert(onConflict = OnConflictStrategy.IGNORE)
+  
+  @Insert
   Single<Long> insert(ClientProfile clientProfile);
-
 
   @Insert
   Single<List<Long>> insert(Collection<ClientProfile> clientProfile);
 
+  @Insert
+  Single<List<Long>> insert(ClientProfile... clientProfiles);
 
-  // CRUD - Update
-  @Update
-  int update(ClientProfile clientProfile);
-
-
-  // CRUD - Delete
   @Delete
-  int delete(ClientProfile... clientProfiles);
+  Single<Integer> delete(ClientProfile clientProfile);
 
-  @Query("SELECT * FROM ClientProfile ORDER BY client_name")
-  LiveData<List<ClientProfile>> select();
+  @Delete
+  Single<Integer> delete(Collection<ClientProfile> clientProfile);
 
+  @Delete
+  Single<Integer> delete(ClientProfile... clientProfiles);
+
+  @Query("SELECT * FROM ClientProfile ORDER BY client_id")
+  List<ClientProfile> select();
+
+
+  @Query("SELECT * FROM ClientProfile WHERE client_id = :id")
+  Single<ClientProfile> select(long id);
 
 }
