@@ -9,8 +9,10 @@ import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 import androidx.room.Update;
 import edu.cnm.deepdive.april.model.entity.ClientProfile;
+import io.reactivex.Maybe;
 import io.reactivex.Single;
 import java.util.Collection;
+import java.util.Date;
 import java.util.List;
 
 @Dao

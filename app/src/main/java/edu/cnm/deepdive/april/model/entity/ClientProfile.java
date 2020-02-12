@@ -21,7 +21,7 @@ public class ClientProfile {
 
   @ColumnInfo(name = "client_profile_id")
   @PrimaryKey(autoGenerate = true)
-  private long id;
+  private long clientProfileId;
 
 
 
@@ -38,12 +38,12 @@ public class ClientProfile {
   private Date dateOfBirth;
 
 
-  @ColumnInfo(name = "address", index = true)
-  private String address;
+  @ColumnInfo(name = "client_address", index = true)
+  private String clientAddress;
 
 
   @ColumnInfo(name = "client_phone", index = true)
-  public long phoneNumber;
+  public long clientPhone;
 
 
   @ColumnInfo(name = "emergency_contact")
