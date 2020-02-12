@@ -17,7 +17,7 @@ import java.util.List;
 
 @Dao
 public interface ClientProfileDao {
-  
+
   @Insert
   Single<Long> insert(ClientProfile clientProfile);
 
