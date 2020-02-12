@@ -11,66 +11,51 @@ import java.util.Date;
 
 @Entity(
     indices = {
-        @Index(value = "client_name", unique = true)
+        @Index(value = "name", unique = true)
     }
 )
 public class ClientProfile {
 
-
   // Primary Key of Client Profile Entity
 
-  @ColumnInfo(name = "client_profile_id")
+  @ColumnInfo(name = "client_id")
   @PrimaryKey(autoGenerate = true)
-  private long clientProfileId;
-
-
+  private long clientId;
 
   // Attributes of Client Profile Entity
 
-  @ColumnInfo(name = "client_record_number", index = true)
-  private long clientRecordNumber;
-
-  @ColumnInfo(name = "client_name", index = true, collate = ColumnInfo.NOCASE)
-  private String clientName;
+  @ColumnInfo(name = "name", index = true, collate = ColumnInfo.NOCASE)
+  private String name;
 
 
   @ColumnInfo(name = "date_of_birth", index = true)
   private Date dateOfBirth;
 
 
-  @ColumnInfo(name = "client_address", index = true)
-  private String clientAddress;
+  @ColumnInfo(name = "address", index = true)
+  private String Address;
 
 
-  @ColumnInfo(name = "client_phone", index = true)
-  public long clientPhone;
-
-
-  @ColumnInfo(name = "emergency_contact")
-  public String emergencyContact;
-
-
-  @ColumnInfo(name = "emergency_contact_phone")
-  public long emergencyContactPhoneNumber;
-
-
-  @ColumnInfo(name = "medical_provider", index = true)
-  public String medicalProvider;
-
-
-  @ColumnInfo(name = "medical_provider_phone")
-  public long medicalProviderPhone;
-
+  @ColumnInfo(name = "phone_number", index = true)
+  public long phoneNumber;
 
 
   // Getters and Setters
 
-  public long getClientRecordNumber() {
-    return clientRecordNumber;
+  public long getClientId() {
+    return clientId;
   }
 
-  public void setClientRecordNumber(long clientRecordNumber) {
-    this.clientRecordNumber = clientRecordNumber;
+  public void setClientId(long clientId) {
+    this.clientId = clientId;
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public void setName(String name) {
+    this.name = name;
   }
 
   public Date getDateOfBirth() {
@@ -82,11 +67,11 @@ public class ClientProfile {
   }
 
   public String getAddress() {
-    return address;
+    return Address;
   }
 
   public void setAddress(String address) {
-    this.address = address;
+    Address = address;
   }
 
   public long getPhoneNumber() {
@@ -96,53 +81,4 @@ public class ClientProfile {
   public void setPhoneNumber(long phoneNumber) {
     this.phoneNumber = phoneNumber;
   }
-
-  public String getEmergencyContact() {
-    return emergencyContact;
-  }
-
-  public void setEmergencyContact(String emergencyContact) {
-    this.emergencyContact = emergencyContact;
-  }
-
-  public long getEmergencyContactPhoneNumber() {
-    return emergencyContactPhoneNumber;
-  }
-
-  public void setEmergencyContactPhoneNumber(long emergencyContactPhoneNumber) {
-    this.emergencyContactPhoneNumber = emergencyContactPhoneNumber;
-  }
-
-  public String getMedicalProvider() {
-    return medicalProvider;
-  }
-
-  public void setMedicalProvider(String medicalProvider) {
-    this.medicalProvider = medicalProvider;
-  }
-
-  public long getMedicalProviderPhone() {
-    return medicalProviderPhone;
-  }
-
-  public void setMedicalProviderPhone(long medicalProviderPhone) {
-    this.medicalProviderPhone = medicalProviderPhone;
-  }
-
-  public long getId() {
-    return id;
-  }
-
-  public void setId(long id) {
-    this.id = id;
-  }
-
-  public String getClientName() {
-    return clientName;
-  }
-
-  public void setClientName(String clientName) {
-    this.clientName = clientName;
-  }
-
 }
