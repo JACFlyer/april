@@ -36,4 +36,23 @@ import androidx.room.PrimaryKey;
   @ColumnInfo(name = "fetal_heart_rate", index = true)
   private int fetalHeartRate;
 
+
+  //  Getters and Setters
+
+
+  public long getFetalId() {
+    return fetalId;
+  }
+
+  public void setFetalId(long fetalId) {
+    this.fetalId = fetalId;
+  }
+
+  public int getFetalHeartRate() {
+    return fetalHeartRate;
+  }
+
+  public void setFetalHeartRate(int fetalHeartRate) {
+    this.fetalHeartRate = fetalHeartRate;
+  }
 }

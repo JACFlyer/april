@@ -46,4 +46,30 @@ import androidx.room.PrimaryKey;
     @ColumnInfo(name = "contraction", index = true)
     private boolean contraction;
 
+    // Getters and Setters
+
+
+  public long getLaborId() {
+    return laborId;
   }
+
+  public void setLaborId(long laborId) {
+    this.laborId = laborId;
+  }
+
+  public boolean isRuptureOfMembranes() {
+    return ruptureOfMembranes;
+  }
+
+  public void setRuptureOfMembranes(boolean ruptureOfMembranes) {
+    this.ruptureOfMembranes = ruptureOfMembranes;
+  }
+
+  public boolean isContraction() {
+    return contraction;
+  }
+
+  public void setContraction(boolean contraction) {
+    this.contraction = contraction;
+  }
+}

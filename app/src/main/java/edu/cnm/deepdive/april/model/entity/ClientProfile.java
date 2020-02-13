@@ -1,11 +1,13 @@
 package edu.cnm.deepdive.april.model.entity;
 
+import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.Index;
 import androidx.room.PrimaryKey;
+import com.google.gson.annotations.Expose;
 import java.util.Date;
-
+import java.util.jar.Attributes.Name;
 
 // Creating PARENT Entity
 
@@ -24,8 +26,11 @@ public class ClientProfile {
 
   // Attributes of Client Profile Entity
 
-  @ColumnInfo(name = "name", index = true, collate = ColumnInfo.NOCASE)
+
+  @NonNull
+  @Expose
   private String name;
+
 
 
   @ColumnInfo(name = "date_of_birth", index = true)

@@ -44,3 +44,6 @@ public interface ClientProfileDao {
   Single<ClientProfile> select(long id);
 
 }
+
+
+

@@ -3,49 +3,75 @@ package edu.cnm.deepdive.april.model.entity;
 
 import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
-import androidx.room.ColumnInfo.Collate;
 import androidx.room.Entity;
 import androidx.room.ForeignKey;
-import androidx.room.Index;
 import androidx.room.PrimaryKey;
 import java.util.Date;
-import java.util.EnumMap;
 
 
-// Entity and Foreign Key designation of Client Assessment class
 @Entity(
-    foreignKeys = {
-        @ForeignKey(
-            entity = ClientProfile.class,
-            parentColumns = "client_id",
-            childColumns = "client_id"
-        )
-    },
+    foreignKeys = @ForeignKey(
+        entity = ClientProfile.class,
+        parentColumns = "client_id",
+        childColumns = "client_id",
+        onDelete = ForeignKey.CASCADE
+    )
 
-    indices = {
-        @Index(value = {"assessment_id"}, unique = true)
-    }
 
 )
-public class Assessment<ENUM> {
 
-  // Primary Key of the Client Assessment Entity
+
+
+
+public class Assessment {
+
   @ColumnInfo(name = "assessment_id", index = true)
   @PrimaryKey(autoGenerate = true)
-  private long assessment;
+  private long id;
 
-  // Attributes of the Client Assessment Entity
 
-  @ColumnInfo(name = "assessment_type", index = true)
-  private ENUM assessmentType;
+  @ColumnInfo(name = "client_id", index = true)
+  private long clientId;
+
 
   @NonNull
   private Date timestamp = new Date();
 
+  public long getId() {
+    return id;
+  }
+
+  public void setId(long id) {
+    this.id = id;
+  }
+
+  public long getClientId() {
+    return clientId;
+  }
+
+  public void setClientId(long clientId) {
+    this.clientId = clientId;
+  }
+
+  public Date getTimestamp() {
+    return timestamp;
+  }
+
+  public void setTimestamp(Date timestamp) {
+    this.timestamp = timestamp;
+  }
 
 
 
-  // Getters and Setters of Client Assessment Entity
+
+
+
+
+
 
 }
+
+
+
+
 
