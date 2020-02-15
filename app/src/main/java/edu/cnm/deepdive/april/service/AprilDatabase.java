@@ -10,6 +10,8 @@ import edu.cnm.deepdive.april.model.dao.AssessmentDao;
 import edu.cnm.deepdive.april.model.dao.ClientProfileDao;
 import edu.cnm.deepdive.april.model.entity.Assessment;
 import edu.cnm.deepdive.april.model.entity.ClientProfile;
+import edu.cnm.deepdive.april.model.entity.FetalCondition;
+import edu.cnm.deepdive.april.model.entity.Labor;
 import edu.cnm.deepdive.april.service.AprilDatabase.Converters;
 import java.util.Date;
 

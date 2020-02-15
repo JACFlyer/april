@@ -36,9 +36,14 @@ import androidx.room.PrimaryKey;
 
 
 
-    // Attributes of Labor Entity
 
 
+// Foreign Key
+
+  @ColumnInfo(name = "assessment_id", index = true)
+  private long assessmentId;
+
+  // Attributes of Labor Entity
     @ColumnInfo(name = "rupture_of_membranes", index = true)
     private boolean ruptureOfMembranes;
 
@@ -71,5 +76,13 @@ import androidx.room.PrimaryKey;
 
   public void setContraction(boolean contraction) {
     this.contraction = contraction;
+  }
+
+  public long getAssessmentId() {
+    return assessmentId;
+  }
+
+  public void setAssessmentId(long assessmentId) {
+    this.assessmentId = assessmentId;
   }
 }

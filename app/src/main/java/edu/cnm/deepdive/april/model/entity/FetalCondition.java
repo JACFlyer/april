@@ -31,8 +31,12 @@ import androidx.room.PrimaryKey;
     @PrimaryKey(autoGenerate = true)
     private long fetalId;
 
-    // Attributes of Client Profile Entity
 
+    // Foreign Key
+    @ColumnInfo(name = "assessment_id", index = true)
+    private long assessmentId;
+
+  // Attributes of Client Profile Entity
   @ColumnInfo(name = "fetal_heart_rate", index = true)
   private int fetalHeartRate;
 
@@ -54,5 +58,13 @@ import androidx.room.PrimaryKey;
 
   public void setFetalHeartRate(int fetalHeartRate) {
     this.fetalHeartRate = fetalHeartRate;
+  }
+
+  public long getAssessmentId() {
+    return assessmentId;
+  }
+
+  public void setAssessmentId(long assessmentId) {
+    this.assessmentId = assessmentId;
   }
 }
