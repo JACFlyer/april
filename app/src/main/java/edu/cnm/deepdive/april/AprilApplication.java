@@ -5,7 +5,7 @@ import com.facebook.stetho.Stetho;
 import edu.cnm.deepdive.april.service.AprilDatabase;
 import io.reactivex.schedulers.Schedulers;
 
-public class AprilApplication extends Application {
+public class      AprilApplication extends Application {
 
 
   @Override
@@ -13,7 +13,9 @@ public class AprilApplication extends Application {
     super.onCreate();
     Stetho.initializeWithDefaults(this);
     AprilDatabase.setContext(this);
-    new Thread(() -> AprilDatabase.getInstance().getClientProfileDao().delete()).start();
+    AprilDatabase.getInstance().getClientProfileDao().delete()
+        .subscribeOn(Schedulers.io())
+        .subscribe();
 
   }
 }
