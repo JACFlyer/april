@@ -5,6 +5,7 @@ import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
 import edu.cnm.deepdive.april.model.entity.Assessment;
+import edu.cnm.deepdive.april.model.entity.ClientProfile;
 import edu.cnm.deepdive.april.model.entity.FetalCondition;
 import io.reactivex.Single;
 import java.util.Collection;
@@ -14,24 +15,28 @@ import java.util.List;
 @Dao
 public interface FetalConditionDao {
 
-
   @Insert
   Single<Long> insert(FetalCondition fetalCondition);
 
+  @Insert
+  Single<List<Long>> insert(Collection<FetalCondition> fetalConditions);
 
   @Insert
-  Single<List<Long>> insert(FetalCondition... fetalCondition);
+  Single<List<Long>> insert(FetalCondition... fetalConditions);
 
   @Delete
   Single<Integer> delete(FetalCondition fetalCondition);
 
   @Delete
-  Single<Integer> delete(Collection<FetalCondition> fetalCondition);
+  Single<Integer> delete(Collection<FetalCondition> fetalConditions);
 
   @Delete
-  Single<Integer> delete(FetalCondition... fetalCondition);
+  Single<Integer> delete(FetalCondition... fetalConditions);
 
   @Query("SELECT * FROM FetalCondition ORDER BY fetal_id")
   List<FetalCondition> select();
+
+  @Query("SELECT * FROM FetalCondition WHERE fetal_id = :id")
+  Single<FetalCondition> select(long id);
 
 }

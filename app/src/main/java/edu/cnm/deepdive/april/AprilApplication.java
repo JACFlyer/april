@@ -13,10 +13,9 @@ public class AprilApplication extends Application {
     super.onCreate();
     Stetho.initializeWithDefaults(this);
     AprilDatabase.setContext(this);
-    AprilDatabase.getInstance().getClientProfileDao().delete()
-        .subscribeOn(Schedulers.io())
-        .subscribe();
-
+    new Thread(() -> AprilDatabase.getInstance().getClientProfileDao().delete()).start();
 
   }
 }
+
+

@@ -8,17 +8,19 @@ import androidx.room.TypeConverter;
 import androidx.room.TypeConverters;
 import edu.cnm.deepdive.april.model.dao.AssessmentDao;
 import edu.cnm.deepdive.april.model.dao.ClientProfileDao;
+import edu.cnm.deepdive.april.model.dao.LaborDao;
+import edu.cnm.deepdive.april.model.dao.FetalConditionDao;
 import edu.cnm.deepdive.april.model.entity.Assessment;
 import edu.cnm.deepdive.april.model.entity.ClientProfile;
-import edu.cnm.deepdive.april.model.entity.FetalCondition;
 import edu.cnm.deepdive.april.model.entity.Labor;
+import edu.cnm.deepdive.april.model.entity.FetalCondition;
 import edu.cnm.deepdive.april.service.AprilDatabase.Converters;
 import java.util.Date;
 
 
 
   @Database(
-      entities = {ClientProfile.class, Assessment.class},
+      entities = {ClientProfile.class, Assessment.class, Labor.class, FetalCondition.class},
       version = 1,
       exportSchema = true
   )
@@ -41,6 +43,10 @@ import java.util.Date;
     public abstract ClientProfileDao getClientProfileDao();
 
     public abstract AssessmentDao getAssessmentDao();
+
+    public abstract LaborDao getLaborDao();
+
+    public abstract FetalConditionDao getFetalConditionDao();
 
     private static class InstanceHolder {
 

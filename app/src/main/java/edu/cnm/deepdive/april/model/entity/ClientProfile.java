@@ -18,34 +18,34 @@ import java.util.jar.Attributes.Name;
 )
 public class ClientProfile {
 
-  // Primary Key of Client Profile Entity
+
 
   @ColumnInfo(name = "client_id")
   @PrimaryKey(autoGenerate = true)
   private long clientId;
 
-  // Attributes of Client Profile Entity
-
 
   @NonNull
   @Expose
+  @ColumnInfo(name = "name")
   private String name;
 
 
-
+  @NonNull
   @ColumnInfo(name = "date_of_birth", index = true)
   private Date dateOfBirth;
 
 
+  @NonNull
   @ColumnInfo(name = "address", index = true)
   private String Address;
 
 
+  @NonNull
   @ColumnInfo(name = "phone_number", index = true)
   public long phoneNumber;
 
 
-  // Getters and Setters
 
   public long getClientId() {
     return clientId;

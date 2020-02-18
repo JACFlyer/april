@@ -2,11 +2,11 @@
   "formatVersion": 1,
   "database": {
     "version": 1,
-    "identityHash": "8690d4efc1a45ea72e18b4428c123586",
+    "identityHash": "99a7904d0289a4941f252d4a642459e7",
     "entities": [
       {
         "tableName": "ClientProfile",
-        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`client_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `name` TEXT NOT NULL, `date_of_birth` INTEGER, `address` TEXT, `phone_number` INTEGER NOT NULL)",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`client_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `name` TEXT NOT NULL, `date_of_birth` INTEGER NOT NULL, `address` TEXT NOT NULL, `phone_number` INTEGER NOT NULL)",
         "fields": [
           {
             "fieldPath": "clientId",
@@ -24,13 +24,13 @@
             "fieldPath": "dateOfBirth",
             "columnName": "date_of_birth",
             "affinity": "INTEGER",
-            "notNull": false
+            "notNull": true
           },
           {
             "fieldPath": "Address",
             "columnName": "address",
             "affinity": "TEXT",
-            "notNull": false
+            "notNull": true
           },
           {
             "fieldPath": "phoneNumber",
@@ -110,24 +110,7 @@
           ],
           "autoGenerate": true
         },
-        "indices": [
-          {
-            "name": "index_Assessment_assessment_id",
-            "unique": false,
-            "columnNames": [
-              "assessment_id"
-            ],
-            "createSql": "CREATE INDEX IF NOT EXISTS `index_Assessment_assessment_id` ON `${TABLE_NAME}` (`assessment_id`)"
-          },
-          {
-            "name": "index_Assessment_client_id",
-            "unique": false,
-            "columnNames": [
-              "client_id"
-            ],
-            "createSql": "CREATE INDEX IF NOT EXISTS `index_Assessment_client_id` ON `${TABLE_NAME}` (`client_id`)"
-          }
-        ],
+        "indices": [],
         "foreignKeys": [
           {
             "table": "ClientProfile",
@@ -141,12 +124,112 @@
             ]
           }
         ]
+      },
+      {
+        "tableName": "Labor",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`labor_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `assessment_id` INTEGER NOT NULL, `rupture_of_membranes` INTEGER NOT NULL, `contraction` INTEGER NOT NULL, FOREIGN KEY(`assessment_id`) REFERENCES `Assessment`(`assessment_id`) ON UPDATE NO ACTION ON DELETE NO ACTION )",
+        "fields": [
+          {
+            "fieldPath": "laborId",
+            "columnName": "labor_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "assessmentId",
+            "columnName": "assessment_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ruptureOfMembranes",
+            "columnName": "rupture_of_membranes",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "contraction",
+            "columnName": "contraction",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "labor_id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": [
+          {
+            "table": "Assessment",
+            "onDelete": "NO ACTION",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "assessment_id"
+            ],
+            "referencedColumns": [
+              "assessment_id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "FetalCondition",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`fetal_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `assessment_id` INTEGER NOT NULL, `fhr` INTEGER NOT NULL, `timestamp` INTEGER NOT NULL, FOREIGN KEY(`assessment_id`) REFERENCES `Assessment`(`assessment_id`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "fetal_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "assessmentId",
+            "columnName": "assessment_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fhr",
+            "columnName": "fhr",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "timestamp",
+            "columnName": "timestamp",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "fetal_id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": [
+          {
+            "table": "Assessment",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "assessment_id"
+            ],
+            "referencedColumns": [
+              "assessment_id"
+            ]
+          }
+        ]
       }
     ],
     "views": [],
     "setupQueries": [
       "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
-      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '8690d4efc1a45ea72e18b4428c123586')"
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '99a7904d0289a4941f252d4a642459e7')"
     ]
   }
 }

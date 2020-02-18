@@ -6,6 +6,8 @@ import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.ForeignKey;
 import androidx.room.PrimaryKey;
+import androidx.room.TypeConverter;
+import com.google.gson.annotations.SerializedName;
 import java.util.Date;
 
 
@@ -16,21 +18,15 @@ import java.util.Date;
         childColumns = "client_id",
         onDelete = ForeignKey.CASCADE
     )
-
-
 )
-
-
-
-
 public class Assessment {
 
-  @ColumnInfo(name = "assessment_id", index = true)
+  @ColumnInfo(name = "assessment_id")
   @PrimaryKey(autoGenerate = true)
   private long id;
 
 
-  @ColumnInfo(name = "client_id", index = true)
+  @ColumnInfo(name = "client_id")
   private long clientId;
 
 
@@ -61,14 +57,23 @@ public class Assessment {
     this.timestamp = timestamp;
   }
 
+  public enum AssessmentType {
+    FETAL,
+    LABOR,
+    VAGINAL,
+    ABDOMINAL;
 
+    @TypeConverter
+    public static Integer toInteger(AssessmentType value) {
+      return (value != null) ? value.ordinal() : null;
+    }
 
+    @TypeConverter
+    public static AssessmentType toAssessmentType(Integer value) {
+      return (value != null) ? AssessmentType.values()[value] : null;
 
-
-
-
-
-
+    }
+  }
 }
 
 

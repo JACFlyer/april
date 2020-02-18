@@ -1,64 +1,50 @@
 package edu.cnm.deepdive.april.model.entity;
 
+
+import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.ForeignKey;
-import androidx.room.Index;
 import androidx.room.PrimaryKey;
+import java.util.Date;
 
-// Creating PARENT Entity
-
-
-// Entity and Foreign Key designation of Fetal Condition class
 
 @Entity(
-    foreignKeys = {
-        @ForeignKey(
-            entity = Assessment.class,
-            parentColumns = "assessment_id",
-            childColumns = "assessment_id"
-        )
-    },
-      indices = {
-          @Index(value = "fetal_id", unique = true)
-      }
-  )
-    public class FetalCondition {
+    foreignKeys = @ForeignKey(
+        entity = Assessment.class,
+        parentColumns = "assessment_id",
+        childColumns = "assessment_id",
+        onDelete = ForeignKey.CASCADE
+    )
+)
+public class FetalCondition {
 
-    // Primary Key of Client Profile Entity
-
-    @ColumnInfo(name = "fetal_id")
-    @PrimaryKey(autoGenerate = true)
-    private long fetalId;
+  @ColumnInfo(name = "fetal_id")
+  @PrimaryKey(autoGenerate = true)
+  private long id;
 
 
-    // Foreign Key
-    @ColumnInfo(name = "assessment_id", index = true)
-    private long assessmentId;
-
-  // Attributes of Client Profile Entity
-  @ColumnInfo(name = "fetal_heart_rate", index = true)
-  private int fetalHeartRate;
+  @ColumnInfo(name = "assessment_id")
+  private long assessmentId;
 
 
-  //  Getters and Setters
+
+  @NonNull
+  @ColumnInfo(name = "fhr")
+  private int fhr;
 
 
-  public long getFetalId() {
-    return fetalId;
+  @NonNull
+  private Date timestamp = new Date();
+
+  public long getId() {
+    return id;
   }
 
-  public void setFetalId(long fetalId) {
-    this.fetalId = fetalId;
+  public void setId(long id) {
+    this.id = id;
   }
 
-  public int getFetalHeartRate() {
-    return fetalHeartRate;
-  }
-
-  public void setFetalHeartRate(int fetalHeartRate) {
-    this.fetalHeartRate = fetalHeartRate;
-  }
 
   public long getAssessmentId() {
     return assessmentId;
@@ -67,4 +53,27 @@ import androidx.room.PrimaryKey;
   public void setAssessmentId(long assessmentId) {
     this.assessmentId = assessmentId;
   }
+
+
+  public Date getTimestamp() {
+    return timestamp;
+  }
+
+  public void setTimestamp(Date timestamp) {
+    this.timestamp = timestamp;
+  }
+
+
+  public int getFhr() {
+    return fhr;
+  }
+
+  public void setFhr(int fhr) {
+    this.fhr = fhr;
+  }
 }
+
+
+
+
+

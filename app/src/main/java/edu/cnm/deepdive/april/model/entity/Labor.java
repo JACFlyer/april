@@ -7,8 +7,6 @@ import androidx.room.Index;
 import androidx.room.PrimaryKey;
 
 
-// Creating PARENT Entity
-
 @Entity(
     foreignKeys = {
         @ForeignKey(
@@ -16,42 +14,26 @@ import androidx.room.PrimaryKey;
             parentColumns = "assessment_id",
             childColumns = "assessment_id"
         )
-    },
-    indices = {
-        @Index(value = "labor_id", unique = true)
     }
 )
-
-
-
-
   public class Labor {
-
-
-    // Primary Key of Labor Entity
 
     @ColumnInfo(name = "labor_id")
     @PrimaryKey(autoGenerate = true)
     private long laborId;
 
 
-
-
-
-// Foreign Key
-
-  @ColumnInfo(name = "assessment_id", index = true)
+  @ColumnInfo(name = "assessment_id")
   private long assessmentId;
 
-  // Attributes of Labor Entity
-    @ColumnInfo(name = "rupture_of_membranes", index = true)
+
+    @ColumnInfo(name = "rupture_of_membranes")
     private boolean ruptureOfMembranes;
 
 
-    @ColumnInfo(name = "contraction", index = true)
+    @ColumnInfo(name = "contraction")
     private boolean contraction;
 
-    // Getters and Setters
 
 
   public long getLaborId() {
