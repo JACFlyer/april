@@ -18,6 +18,8 @@ have access to the client's app profile for monitoring and response purposes.
 
 
 
+
+
 # Intended Users
 * Pregnant women in antepartum period, and near early labor phase  
 * Client spouses and support team members  
@@ -25,6 +27,8 @@ have access to the client's app profile for monitoring and response purposes.
 * Community pregnancy support service providers  
 
 ### [User Stories](user-stories.md)
+
+
 
 
 
@@ -39,7 +43,10 @@ have access to the client's app profile for monitoring and response purposes.
 
 
 
+
+
 ### [Wireframe Diagram](wireframe.md)
+
 
 
 
