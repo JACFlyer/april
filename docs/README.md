@@ -3,18 +3,18 @@ _Applied Pregnancy Resilience Informatics_
 
 The onset of labor can be difficult to determine for a mom to be.  Knowing the right time to go to
 the hospital can make the difference between having a successful self-designed birth plan
-and being admitted before planned.  At times a labor and delivery provider might simply send
-her home, frustrated, with instructions on when to return.  This is often a waste of time and
+and being admitted before planned.  At times, an ER labor and delivery provider might simply send
+mom home, frustrated, and with instructions on when to return.  This is often a waste of time and
 resources for both the hospital and the client.
 
 It is the intention of this project to develop an evidenced based application that provides
 accurate and safe coaching to the client regarding her stage of labor.  In so doing,
 the application will promote the wellness of both the mother and child.
 
-Using the product involves downloading the app to ones smart device (cell phone or tablet),
+Using this product involves downloading the app to ones smart device (cell phone or tablet),
 and linking external assessment tools to the program.  The entire April Suite will be
-implemented during a routine pre-natal visit by the attending provider who will have access to the
-client's portal for monitoring and response purposes. 
+implemented during a routine pre-natal visit at the office of the attending provider who will 
+have access to the client's app profile for monitoring and response purposes. 
 
 
 ## Intended Users
