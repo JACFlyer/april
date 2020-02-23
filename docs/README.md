@@ -24,61 +24,25 @@ have access to the client's app profile for monitoring and response purposes.
 * OB/GYN and CNM medical providers  
 * Community pregnancy support service providers  
 
-###[User Stories](user-stories.md)
+### [User Stories](user-stories.md)
 
 
 
-## Features
-* History  
-  Mom will be prompted to enter medical history relevant to the pregnancy.
+# External Services        
+* Google GPS for 911 connection, [Bandwidth 911 Access](https://bandwidth.com/911).  This link will allow for seamless transition from a negative assessment to calling for help.  April is not dependent on this function.
 
-* Contraction Counter  
-  With every contraction, mom can record the start and end of all contraction types.
+* Fetal Heart Rate monitoring software and Wi-Fi enabled emitter, [Edan SDI Ultrasonic Pocket Doppler](https://fetaldoppler.net/fd340-fetal-doppler.html).  This API and device allows for the capture of the fetal heart rate.  This feature supports the critical project functionality of April.
+ 
+* Cervical Camera software and Wi Fi enabled device, [SVAKOM Siime Inteligent Camera](https://www.svakom.net/Siime).  This API and device allow the condition of the cervix to be captured in real-time images.  The device supports the critical project functionality of April.  Future versions of the app will allow for AI interpretation of the database of cervical images in the attempt to develop a predictive algorhythm of visible cervical condition and time-to-delivery.
 
-* Pain Record  
-  Mom will be able to record the onset, duration, quality, intensity, location, change and resolution of pain.
+* Abdominal Ultrasound software and Wi Fi enabled transducer, [MobiSante](http://www.mobisante.com/).  This API and device will allow for the evaluation of residual amniotic fluid after the ROM.  Fetal presentation will also be observable by the provider while mom is yet at home.  The device supports advanced functionality of April.
 
-* Fetal Heart Rate Monitor  
-  There is an option for either episodic or continuous FHR monitoring with a Wi-Fi enabled device attached to the abdomen.
-
-* Vaginal Mucous Changes  
-  This feature allows mom to document any changes to vaginal mucous.
-
-* Bloody Show  
-  Mom will indicate the instance and character of vaginal bleeding.  
-
-* Water-Break Moment  
-  This is a feature that records the onset of the rupture of membranes.  The time will be adjustable to allow for late entries.  
-
-* Trends  
-  All entered data will be analyzed in sync and trend lines for each will be displayed in relation to the others. 
-
-* Emergency Alert  
-  When activated, this feature places a call to 911 and the designated emergency contacts.
-  
-
-## Stretch Goals
-* Cervical Scan  
-  A Wi Fi enabled camera probe will relay images of the cervical effacement and dilitation to the app for consideration by the medical provider. This will provide an assessment of labor progression.   
-
-* Abdominal Ultrasound  
-  A Wi Fi enabled ultrasound transducer will allow mom to capture images of fetal presentation and the presence of amniotic fluid for the provider to consider.
-
-* Provider Tap  
-  This feature allow mom to tap the provider as a request for the review of her current data and guidance.
 
 
 ### [Wireframe Diagram](wireframe.md)
 
 
+
 ### [Entity Relationship Diagram](erd.md)  
 
 
-## External Services        
-* Google GPS for 911 connection, [Bandwidth 911 Access](https://bandwidth.com/911).  April is not dependent on this function.
-
-* Fetal Heart Rate monitoring software and Wi-Fi enabled emitter, [Edan SDI Ultrasonic Pocket Doppler](https://fetaldoppler.net/fd340-fetal-doppler.html).  This API and device support the critical project functionality of April.
- 
-* Cervical Camera software and Wi Fi enabled device, [SVAKOM Siime Inteligent Camera](https://www.svakom.net/Siime).  This API and device support the critical project functionality of April.
-
-* Abdominal Ultrasound software and Wi Fi enabled transducer, [MobiSante](http://www.mobisante.com/).  This API and device support advanced functionality of April.
