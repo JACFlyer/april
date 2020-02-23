@@ -17,6 +17,7 @@ implemented during a routine pre-natal visit at the office of the attending prov
 have access to the client's app profile for monitoring and response purposes. 
 
 
+
 ## Intended Users
 * Pregnant women at various stages of gestation  
 * Client spouses and support team members  
