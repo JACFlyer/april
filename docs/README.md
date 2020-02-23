@@ -1,4 +1,4 @@
-## Overview
+# Overview
 _Applied Pregnancy Informatics_
 
 The onset of labor can be difficult to determine for a mom to be.  Knowing the right time to go to
@@ -18,13 +18,14 @@ have access to the client's app profile for monitoring and response purposes.
 
 
 
-## Intended Users
-* Pregnant women at various stages of gestation  
+# Intended Users
+* Pregnant women in antepartum period, and near early labor phase  
 * Client spouses and support team members  
 * OB/GYN and CNM medical providers  
 * Community pregnancy support service providers  
 
-[User Stories](user-stories.md)
+###[User Stories](user-stories.md)
+
 
 
 ## Features
