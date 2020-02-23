@@ -1,5 +1,5 @@
 ## Overview
-_Applied Pregnancy Resilience Informatics_
+_Applied Pregnancy Informatics_
 
 The onset of labor can be difficult to determine for a mom to be.  Knowing the right time to go to
 the hospital can make the difference between having a successful self-designed birth plan
@@ -12,7 +12,7 @@ accurate and safe coaching to the client regarding her stage of labor.  In so do
 the application will promote the wellness of both the mother and child.
 
 Using this product involves downloading the app to ones smart device (cell phone or tablet),
-and linking external assessment tools to the program.  The entire April Suite will be
+and linking external assessment tools to the program.  The entire _April Suite_ will be
 implemented during a routine pre-natal visit at the office of the attending provider who will 
 have access to the client's app profile for monitoring and response purposes. 
 
