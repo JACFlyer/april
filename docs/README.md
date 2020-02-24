@@ -45,11 +45,12 @@ have access to the client's app profile for monitoring and response purposes.
 
 
 
-### [Wireframe Diagram](wireframe.md)
-
-
-
-
-### [Entity Relationship Diagram](erd.md)  
+# Design Documentation        
+### [Wireframe Diagram](wireframe.md)  
+### [Entity Relationship Diagram](erd.md)    
+### [Client Profile Entity] (https://github.com/JACFlyer/april/blob/master/app/src/main/java/edu/cnm/deepdive/april/model/entity/ClientProfile.java)  
+### [Assessment Entity] ()  
+### [Labor Entity] ()  
+### [FetalCondition Entity] ()  
 
 

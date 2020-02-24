@@ -16,48 +16,49 @@ import edu.cnm.deepdive.april.model.entity.Labor;
 import edu.cnm.deepdive.april.model.entity.FetalCondition;
 import edu.cnm.deepdive.april.service.AprilDatabase.Converters;
 import java.util.Date;
+import okhttp3.MediaType;
 
-
-
-  @Database(
+/*  The @Database annotation, with an entities argument that specifies all of the entity classes in the data model. */
+@Database(
       entities = {ClientProfile.class, Assessment.class, Labor.class, FetalCondition.class},
       version = 1,
       exportSchema = true
   )
-  @TypeConverters({Converters.class})
+
+
+  @TypeConverters({Converters.class, MediaType.class})
 
   public abstract class AprilDatabase extends RoomDatabase {
 
     private static final String DB_NAME = "client_db";
 
+    /*  A private static field of the android.app.Application type settable to a public static setter. */
     private static Application context;
-
     public static void setContext(Application context) {
       AprilDatabase.context = context;
     }
 
+    /* An implementation of the singleton pattern, with a getInstance() method that returns an instance of the class. */
     public static AprilDatabase getInstance() {
       return InstanceHolder.INSTANCE;
     }
 
+
+
+    /* Abstract methods returning instances of DAO interfaces. */
     public abstract ClientProfileDao getClientProfileDao();
-
     public abstract AssessmentDao getAssessmentDao();
-
     public abstract LaborDao getLaborDao();
-
     public abstract FetalConditionDao getFetalConditionDao();
 
-    private static class InstanceHolder {
 
+    private static class InstanceHolder {
       private static final AprilDatabase INSTANCE = Room.databaseBuilder(
           context, AprilDatabase.class, DB_NAME)
           .build();
-
     }
 
     public static class Converters {
-
       @TypeConverter
       public static Long fromDate(Date date) {
         return (date != null) ? date.getTime() : null;
@@ -68,17 +69,7 @@ import java.util.Date;
         return (value != null) ? new Date(value) : null;
       }
 
+
     }
-
-
-
-
-
-
-
-
-
-
-
 
 }
