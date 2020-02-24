@@ -52,7 +52,7 @@ import okhttp3.MediaType;
     public abstract FetalConditionDao getFetalConditionDao();
 
 
-    private static class InstanceHolder {
+    public static class InstanceHolder {
       private static final AprilDatabase INSTANCE = Room.databaseBuilder(
           context, AprilDatabase.class, DB_NAME)
           .build();
