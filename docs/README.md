@@ -48,9 +48,8 @@ have access to the client's app profile for monitoring and response purposes.
 # Design Documentation        
 ### [Wireframe Diagram](wireframe.md)  
 ### [Entity Relationship Diagram](erd.md)    
-### [Client Profile Entity] (https://github.com/JACFlyer/april/blob/master/app/src/main/java/edu/cnm/deepdive/april/model/entity/ClientProfile.java)  
-### [Assessment Entity] ()  
-### [Labor Entity] ()  
-### [FetalCondition Entity] ()  
-
+### [Client Profile Entity](https://github.com/JACFlyer/april/blob/master/app/src/main/java/edu/cnm/deepdive/april/model/entity/ClientProfile.java)    
+### [Assessment Entity](https://github.com/JACFlyer/april/blob/master/app/src/main/java/edu/cnm/deepdive/april/model/entity/Assessment.java)    
+### [Labor Entity](https://github.com/JACFlyer/april/blob/master/app/src/main/java/edu/cnm/deepdive/april/model/entity/Labor.java)    
+### [Fetal Condition Entity](https://github.com/JACFlyer/april/blob/master/app/src/main/java/edu/cnm/deepdive/april/model/entity/FetalCondition.java)    
 
