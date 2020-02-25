@@ -22,11 +22,15 @@ CREATE INDEX IF NOT EXISTS `ClientProfile` ON `ClientProfile` (`phone_number`);
 
 CREATE TABLE IF NOT EXISTS `Assessment`
 (
-    `assessment_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
-    `client_id`     INTEGER                           NOT NULL,
-    `timestamp`     INTEGER                           NOT NULL,
+    `assessment_id`   INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+    `client_id`       INTEGER                           NOT NULL,
+    `assessment_type` INTEGER,
+    `timestamp`       INTEGER                           NOT NULL,
     FOREIGN KEY (`client_id`) REFERENCES `ClientProfile` (`client_id`) ON UPDATE NO ACTION ON DELETE CASCADE
 );
+CREATE UNIQUE INDEX IF NOT EXISTS `Assessment` ON `Assessment` (`assessment_id`);
+
+
 
 CREATE TABLE IF NOT EXISTS `Labor`
 (
