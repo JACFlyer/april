@@ -2,11 +2,11 @@
   "formatVersion": 1,
   "database": {
     "version": 1,
-    "identityHash": "9ef5912f43c09fd3e392f1144b1b2d5a",
+    "identityHash": "ccaa14d2d5b32045a1f4f9370314112e",
     "entities": [
       {
         "tableName": "ClientProfile",
-        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`client_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `name` TEXT NOT NULL, `date_of_birth` INTEGER NOT NULL, `address` TEXT NOT NULL, `phone_number` INTEGER NOT NULL)",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`client_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `name` TEXT NOT NULL, `date_of_birth` INTEGER NOT NULL, `address` TEXT, `phone_number` INTEGER NOT NULL)",
         "fields": [
           {
             "fieldPath": "clientId",
@@ -30,7 +30,7 @@
             "fieldPath": "Address",
             "columnName": "address",
             "affinity": "TEXT",
-            "notNull": true
+            "notNull": false
           },
           {
             "fieldPath": "phoneNumber",
@@ -53,30 +53,6 @@
               "name"
             ],
             "createSql": "CREATE UNIQUE INDEX IF NOT EXISTS `index_ClientProfile_name` ON `${TABLE_NAME}` (`name`)"
-          },
-          {
-            "name": "index_ClientProfile_date_of_birth",
-            "unique": false,
-            "columnNames": [
-              "date_of_birth"
-            ],
-            "createSql": "CREATE INDEX IF NOT EXISTS `index_ClientProfile_date_of_birth` ON `${TABLE_NAME}` (`date_of_birth`)"
-          },
-          {
-            "name": "index_ClientProfile_address",
-            "unique": false,
-            "columnNames": [
-              "address"
-            ],
-            "createSql": "CREATE INDEX IF NOT EXISTS `index_ClientProfile_address` ON `${TABLE_NAME}` (`address`)"
-          },
-          {
-            "name": "index_ClientProfile_phone_number",
-            "unique": false,
-            "columnNames": [
-              "phone_number"
-            ],
-            "createSql": "CREATE INDEX IF NOT EXISTS `index_ClientProfile_phone_number` ON `${TABLE_NAME}` (`phone_number`)"
           }
         ],
         "foreignKeys": []
@@ -136,7 +112,7 @@
       },
       {
         "tableName": "Labor",
-        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`labor_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `assessment_id` INTEGER NOT NULL, `rupture_of_membranes` INTEGER NOT NULL, `contraction` INTEGER NOT NULL, FOREIGN KEY(`assessment_id`) REFERENCES `Assessment`(`assessment_id`) ON UPDATE NO ACTION ON DELETE NO ACTION )",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`labor_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `assessment_id` INTEGER NOT NULL, `rupture_of_membranes` INTEGER NOT NULL, `contraction` INTEGER NOT NULL, `timestamp` INTEGER NOT NULL, FOREIGN KEY(`assessment_id`) REFERENCES `Assessment`(`assessment_id`) ON UPDATE NO ACTION ON DELETE NO ACTION )",
         "fields": [
           {
             "fieldPath": "laborId",
@@ -159,6 +135,12 @@
           {
             "fieldPath": "contraction",
             "columnName": "contraction",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "timestamp",
+            "columnName": "timestamp",
             "affinity": "INTEGER",
             "notNull": true
           }
@@ -238,7 +220,7 @@
     "views": [],
     "setupQueries": [
       "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
-      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '9ef5912f43c09fd3e392f1144b1b2d5a')"
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'ccaa14d2d5b32045a1f4f9370314112e')"
     ]
   }
 }

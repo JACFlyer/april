@@ -32,17 +32,16 @@ public class ClientProfile {
 
 
   @NonNull
-  @ColumnInfo(name = "date_of_birth", index = true)
+  @ColumnInfo(name = "date_of_birth")
   private Date dateOfBirth;
 
 
-  @NonNull
-  @ColumnInfo(name = "address", index = true)
+
+  @ColumnInfo(name = "address")
   private String Address;
 
 
-  @NonNull
-  @ColumnInfo(name = "phone_number", index = true)
+  @ColumnInfo(name = "phone_number")
   public long phoneNumber;
 
 

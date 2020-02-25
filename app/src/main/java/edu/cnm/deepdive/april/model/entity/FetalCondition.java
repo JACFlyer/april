@@ -37,6 +37,9 @@ public class FetalCondition {
   @NonNull
   private Date timestamp = new Date();
 
+
+
+
   public long getId() {
     return id;
   }

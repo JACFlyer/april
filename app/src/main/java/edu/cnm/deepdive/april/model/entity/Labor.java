@@ -1,10 +1,12 @@
 package edu.cnm.deepdive.april.model.entity;
 
+import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.ForeignKey;
 import androidx.room.Index;
 import androidx.room.PrimaryKey;
+import java.util.Date;
 
 
 @Entity(
@@ -35,6 +37,12 @@ import androidx.room.PrimaryKey;
     private boolean contraction;
 
 
+   @NonNull
+   private Date timestamp = new Date();
+
+  public void setTimestamp(@NonNull Date timestamp) {
+    this.timestamp = timestamp;
+  }
 
   public long getLaborId() {
     return laborId;
@@ -42,6 +50,11 @@ import androidx.room.PrimaryKey;
 
   public void setLaborId(long laborId) {
     this.laborId = laborId;
+  }
+
+  @NonNull
+  public Date getTimestamp() {
+    return timestamp;
   }
 
   public boolean isRuptureOfMembranes() {
