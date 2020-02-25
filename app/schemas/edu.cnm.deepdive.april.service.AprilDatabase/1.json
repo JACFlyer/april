@@ -2,7 +2,7 @@
   "formatVersion": 1,
   "database": {
     "version": 1,
-    "identityHash": "99a7904d0289a4941f252d4a642459e7",
+    "identityHash": "9ef5912f43c09fd3e392f1144b1b2d5a",
     "entities": [
       {
         "tableName": "ClientProfile",
@@ -110,7 +110,16 @@
           ],
           "autoGenerate": true
         },
-        "indices": [],
+        "indices": [
+          {
+            "name": "index_Assessment_assessment_id",
+            "unique": true,
+            "columnNames": [
+              "assessment_id"
+            ],
+            "createSql": "CREATE UNIQUE INDEX IF NOT EXISTS `index_Assessment_assessment_id` ON `${TABLE_NAME}` (`assessment_id`)"
+          }
+        ],
         "foreignKeys": [
           {
             "table": "ClientProfile",
@@ -229,7 +238,7 @@
     "views": [],
     "setupQueries": [
       "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
-      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '99a7904d0289a4941f252d4a642459e7')"
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '9ef5912f43c09fd3e392f1144b1b2d5a')"
     ]
   }
 }

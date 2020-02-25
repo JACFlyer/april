@@ -5,6 +5,7 @@ import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.ForeignKey;
+import androidx.room.Index;
 import androidx.room.PrimaryKey;
 import androidx.room.TypeConverter;
 import com.google.gson.annotations.SerializedName;
@@ -17,8 +18,12 @@ import java.util.Date;
         parentColumns = "client_id",
         childColumns = "client_id",
         onDelete = ForeignKey.CASCADE
+    ),
+
+    indices = @Index(value = "assessment_id", unique = true)
+
     )
-)
+
 public class Assessment {
 
   @ColumnInfo(name = "assessment_id")
@@ -63,16 +68,6 @@ public class Assessment {
     VAGINAL,
     ABDOMINAL;
 
-    @TypeConverter
-    public static Integer toInteger(AssessmentType value) {
-      return (value != null) ? value.ordinal() : null;
-    }
-
-    @TypeConverter
-    public static AssessmentType toAssessmentType(Integer value) {
-      return (value != null) ? AssessmentType.values()[value] : null;
-
-    }
   }
 }
 

@@ -26,7 +26,7 @@ import okhttp3.MediaType;
   )
 
 
-  @TypeConverters({Converters.class, MediaType.class})
+  @TypeConverters({Converters.class})
 
   public abstract class AprilDatabase extends RoomDatabase {
 
