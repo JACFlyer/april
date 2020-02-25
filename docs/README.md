@@ -45,23 +45,27 @@ have access to the client's app profile for monitoring and response purposes.
 
 
 
-# Data Design Documentation        
+# Data Model Documentation        
 ### [Entity Relationship Diagram](erd.md)    
+
 
 ### [Client Profile Entity](https://github.com/JACFlyer/april/blob/master/app/src/main/java/edu/cnm/deepdive/april/model/entity/ClientProfile.java)    
 ### [Client Profile Dao](https://github.com/JACFlyer/april/blob/master/app/src/main/java/edu/cnm/deepdive/april/model/dao/ClientProfileDao.java)    
 
+
 ### [Assessment Entity](https://github.com/JACFlyer/april/blob/master/app/src/main/java/edu/cnm/deepdive/april/model/entity/Assessment.java)    
 ### [Assessment Dao](https://github.com/JACFlyer/april/blob/master/app/src/main/java/edu/cnm/deepdive/april/model/dao/AssessmentDao.java)    
 
+
 ### [Labor Entity](https://github.com/JACFlyer/april/blob/master/app/src/main/java/edu/cnm/deepdive/april/model/entity/Labor.java)    
 ### [Labor Dao](https://github.com/JACFlyer/april/blob/master/app/src/main/java/edu/cnm/deepdive/april/model/dao/LaborDao.java)    
+
 
 ### [Fetal Condition Entity](https://github.com/JACFlyer/april/blob/master/app/src/main/java/edu/cnm/deepdive/april/model/entity/FetalCondition.java)    
 ### [Fetal Condition Dao](https://github.com/JACFlyer/april/blob/master/app/src/main/java/edu/cnm/deepdive/april/model/dao/FetalConditionDao.java)    
 
 
-
+### [ddl.md File](https://github.com/JACFlyer/april/blob/master/docs/ddl.md)
 
 
 # User Interface Design Documentation
