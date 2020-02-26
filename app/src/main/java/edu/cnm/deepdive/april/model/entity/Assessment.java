@@ -35,6 +35,11 @@ public class Assessment {
   private long clientId;
 
 
+  @ColumnInfo(name = "assessment_type")
+  public AssessmentType assessmentType;
+
+
+
   @NonNull
   private Date timestamp = new Date();
 
@@ -57,6 +62,15 @@ public class Assessment {
     this.clientId = clientId;
   }
 
+  public AssessmentType getAssessmentType() {
+    return assessmentType;
+  }
+
+  public void setAssessmentType(
+      AssessmentType assessmentType) {
+    this.assessmentType = assessmentType;
+  }
+
   public Date getTimestamp() {
     return timestamp;
   }
@@ -66,12 +80,20 @@ public class Assessment {
   }
 
   public enum AssessmentType {
-    FETAL,
     LABOR,
-    VAGINAL,
-    ABDOMINAL;
+    FETAL_CONDITION;
 
+    @TypeConverter
+    public static AssessmentType fromInteger(Integer value) {
+      return (value != null) ? AssessmentType.values()[value] : null;
+    }
+
+    @TypeConverter
+    public static Integer toInteger (AssessmentType value) {
+      return (value != null) ? value.ordinal() : null;
+    }
   }
+
 }
 
 

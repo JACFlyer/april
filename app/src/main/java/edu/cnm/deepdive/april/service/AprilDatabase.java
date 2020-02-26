@@ -11,6 +11,7 @@ import edu.cnm.deepdive.april.model.dao.ClientProfileDao;
 import edu.cnm.deepdive.april.model.dao.LaborDao;
 import edu.cnm.deepdive.april.model.dao.FetalConditionDao;
 import edu.cnm.deepdive.april.model.entity.Assessment;
+import edu.cnm.deepdive.april.model.entity.Assessment.AssessmentType;
 import edu.cnm.deepdive.april.model.entity.ClientProfile;
 import edu.cnm.deepdive.april.model.entity.Labor;
 import edu.cnm.deepdive.april.model.entity.FetalCondition;
@@ -26,7 +27,7 @@ import okhttp3.MediaType;
   )
 
 
-  @TypeConverters({Converters.class})
+  @TypeConverters({Converters.class, AssessmentType.class})
 
   public abstract class AprilDatabase extends RoomDatabase {
 

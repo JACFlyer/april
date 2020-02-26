@@ -37,7 +37,8 @@ have access to the client's app profile for monitoring and response purposes.
 
 * Fetal Heart Rate monitoring software and Wi-Fi enabled emitter, [Edan SDI Ultrasonic Pocket Doppler](https://fetaldoppler.net/fd340-fetal-doppler.html).  This API and device allows for the capture of the fetal heart rate.  This feature supports the critical project functionality of April.
  
-* Cervical Camera software and Wi Fi enabled device, [SVAKOM Siime Inteligent Camera](https://www.svakom.net/Siime).  This API and device allow the condition of the cervix to be captured in real-time images.  The device supports the critical project functionality of April.  Future versions of the app will allow for AI interpretation of the database of cervical images in the attempt to develop a predictive algorhythm of visible cervical condition and time-to-delivery.
+* Cervical Camera software and Wi Fi enabled device, [SVAKOM Siime Inteligent Camera](https://www.amazon.com/Authentic-Wireless-Vibrator-Waterproof-Massager/dp/B01DVQOLEA/ref=pd_day0_c_121_3/130-5634076-1338833?_encoding=UTF8&pd_rd_i=B01DVQOLEA&pd_rd_r=73fa6798-7050-40d9-8039-7dced9229204&pd_rd_w=EwUVf&pd_rd_wg=Bgb5y&pf_rd_p=47a9d55c-4dbb-48fe-a136-8e1abc72e8e6&pf_rd_r=F66E8CJ6654ZK5TQJQA5&psc=1&refRID=F66E8CJ6654ZK5TQJQA5
+).  This API and device allow the condition of the cervix to be captured in real-time images.  The device supports the critical project functionality of April.  Future versions of the app will allow for AI interpretation of the database of cervical images in the attempt to develop a predictive algorhythm of visible cervical condition and time-to-delivery.
 
 * Abdominal Ultrasound software and Wi Fi enabled transducer, [MobiSante](http://www.mobisante.com/).  This API and device will allow for the evaluation of residual amniotic fluid after the ROM.  Fetal presentation will also be observable by the provider while mom is yet at home.  The device supports advanced functionality of April.
 

@@ -2,7 +2,7 @@
   "formatVersion": 1,
   "database": {
     "version": 1,
-    "identityHash": "ccaa14d2d5b32045a1f4f9370314112e",
+    "identityHash": "34f3b600564df3d7dfa5b43ee09b0462",
     "entities": [
       {
         "tableName": "ClientProfile",
@@ -59,7 +59,7 @@
       },
       {
         "tableName": "Assessment",
-        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`assessment_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `client_id` INTEGER NOT NULL, `timestamp` INTEGER NOT NULL, FOREIGN KEY(`client_id`) REFERENCES `ClientProfile`(`client_id`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`assessment_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `client_id` INTEGER NOT NULL, `assessment_type` INTEGER, `timestamp` INTEGER NOT NULL, FOREIGN KEY(`client_id`) REFERENCES `ClientProfile`(`client_id`) ON UPDATE NO ACTION ON DELETE CASCADE )",
         "fields": [
           {
             "fieldPath": "id",
@@ -72,6 +72,12 @@
             "columnName": "client_id",
             "affinity": "INTEGER",
             "notNull": true
+          },
+          {
+            "fieldPath": "assessmentType",
+            "columnName": "assessment_type",
+            "affinity": "INTEGER",
+            "notNull": false
           },
           {
             "fieldPath": "timestamp",
@@ -220,7 +226,7 @@
     "views": [],
     "setupQueries": [
       "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
-      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'ccaa14d2d5b32045a1f4f9370314112e')"
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '34f3b600564df3d7dfa5b43ee09b0462')"
     ]
   }
 }
