@@ -8,6 +8,7 @@ import androidx.room.Insert;
 import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 import androidx.room.Update;
+import edu.cnm.deepdive.april.model.entity.Assessment;
 import edu.cnm.deepdive.april.model.entity.ClientProfile;
 import io.reactivex.Maybe;
 import io.reactivex.Single;
@@ -18,6 +19,8 @@ import java.util.List;
 @Dao
 public interface ClientProfileDao {
 
+
+  /** Establishing Create CRUD-Operation **/
   @Insert
   Single<Long> insert(ClientProfile clientProfile);
 
@@ -27,6 +30,29 @@ public interface ClientProfileDao {
   @Insert
   Single<List<Long>> insert(ClientProfile... clientProfiles);
 
+
+  /** Establishing Read CRUD-Operation **/
+  @Query("SELECT * FROM ClientProfile ORDER BY client_id")
+  List<ClientProfile> select();
+
+
+  @Query("SELECT * FROM ClientProfile WHERE client_id = :id")
+  Single<ClientProfile> select(long id);
+
+
+  /** Establishing Update CRUD-Operation **/
+  @Update
+  Single<Long> update(ClientProfile clientProfile);
+
+  @Update
+  Single<List<Long>> update(Collection<ClientProfile> clientProfiles);
+
+  @Update
+  Single<List<Long>> update(ClientProfile... clientProfiles);
+
+
+
+  /** Establishing Delete CRUD-Operation **/
   @Delete
   Single<Integer> delete(ClientProfile clientProfile);
 
@@ -35,13 +61,6 @@ public interface ClientProfileDao {
 
   @Delete
   Single<Integer> delete(ClientProfile... clientProfiles);
-
-  @Query("SELECT * FROM ClientProfile ORDER BY client_id")
-  List<ClientProfile> select();
-
-
-  @Query("SELECT * FROM ClientProfile WHERE client_id = :id")
-  Single<ClientProfile> select(long id);
 
 }
 

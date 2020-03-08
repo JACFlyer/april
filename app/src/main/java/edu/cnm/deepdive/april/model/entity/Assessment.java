@@ -79,6 +79,10 @@ public class Assessment {
     this.timestamp = timestamp;
   }
 
+  public void setAssessmentId(long assessmentId) {
+
+  }
+
   public enum AssessmentType {
     LABOR,
     FETAL_CONDITION;

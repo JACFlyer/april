@@ -42,9 +42,12 @@ have access to the client's app profile for monitoring and response purposes.
 
 * Abdominal Ultrasound software and Wi Fi enabled transducer, [MobiSante](http://www.mobisante.com/).  This API and device will allow for the evaluation of residual amniotic fluid after the ROM.  Fetal presentation will also be observable by the provider while mom is yet at home.  The device supports advanced functionality of April.
 
-
-
-
+/* 
+Consider corded Android capable camera fixed to vaginal suppository inserter.
+USB Endoscope with 4 Adjustable LED Lights,Anykit 5.0 Megapixels Semi-Rigid Borescope Waterproof Inspection Camera for Android, MacBook & Windows PC 5m(16.4 ft)
+Camera - https://www.amazon.com/Anykit-Megapixels-Inspection-Waterproof-Semi-Rigid/dp/B07NW4C7JG/ref=sr_1_17?keywords=vaginal+camera&qid=1582731129&sr=8-17 
+Applicator - https://www.amazon.com/BoriCap-Suppository-Suppositories-Individually-Recommended/dp/B01M1NJOIF/ref=sr_1_24?keywords=vaginal+camera&qid=1582731694&sr=8-24
+*/
 
 # Data Model Documentation        
 ### [Entity Relationship Diagram](erd.md)    
