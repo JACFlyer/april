@@ -55,21 +55,26 @@ Applicator - https://www.amazon.com/BoriCap-Suppository-Suppositories-Individual
 
 ### [Client Profile Entity](https://github.com/JACFlyer/april/blob/master/app/src/main/java/edu/cnm/deepdive/april/model/entity/ClientProfile.java)    
 ### [Client Profile Dao](https://github.com/JACFlyer/april/blob/master/app/src/main/java/edu/cnm/deepdive/april/model/dao/ClientProfileDao.java)    
+### [Client Profile Repository](https://github.com/JACFlyer/april/blob/master/app/src/main/java/edu/cnm/deepdive/april/model/repository/ClientProfileRepository.java)    
 
 
 ### [Assessment Entity](https://github.com/JACFlyer/april/blob/master/app/src/main/java/edu/cnm/deepdive/april/model/entity/Assessment.java)    
 ### [Assessment Dao](https://github.com/JACFlyer/april/blob/master/app/src/main/java/edu/cnm/deepdive/april/model/dao/AssessmentDao.java)    
+### [Assessment Repository](https://github.com/JACFlyer/april/blob/master/app/src/main/java/edu/cnm/deepdive/april/model/repository/AssessmentRepository.java)    
 
 
 ### [Labor Entity](https://github.com/JACFlyer/april/blob/master/app/src/main/java/edu/cnm/deepdive/april/model/entity/Labor.java)    
 ### [Labor Dao](https://github.com/JACFlyer/april/blob/master/app/src/main/java/edu/cnm/deepdive/april/model/dao/LaborDao.java)    
+### [Labor Repository](https://github.com/JACFlyer/april/blob/master/app/src/main/java/edu/cnm/deepdive/april/model/repository/LaborRepository.java)    
 
 
 ### [Fetal Condition Entity](https://github.com/JACFlyer/april/blob/master/app/src/main/java/edu/cnm/deepdive/april/model/entity/FetalCondition.java)    
 ### [Fetal Condition Dao](https://github.com/JACFlyer/april/blob/master/app/src/main/java/edu/cnm/deepdive/april/model/dao/FetalConditionDao.java)    
+### [Fetal Condition Repository](https://github.com/JACFlyer/april/blob/master/app/src/main/java/edu/cnm/deepdive/april/model/repository/FCRepository.java)    
 
 
-### [ddl.md File](https://github.com/JACFlyer/april/blob/master/docs/ddl.md)
+### [Data Definition Language](ddl.md)
+### [Data Definition Language SQL](ddl.sql)
 
 
 # User Interface Design Documentation
