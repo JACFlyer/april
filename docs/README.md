@@ -73,7 +73,7 @@ This device is a more likely application for the immediate project yet a stretch
 ### [Data Definition Language](ddl.md)
 
 
-### [Database Class](AprilDatabase.java)
+### [Database Class](https://github.com/JACFlyer/april/blob/master/app/src/main/java/edu/cnm/deepdive/april/service/AprilDatabase.java)
 
 
 # User Interface Design Documentation
