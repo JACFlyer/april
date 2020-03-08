@@ -71,7 +71,9 @@ This device is a more likely application for the immediate project yet a stretch
 
 
 ### [Data Definition Language](ddl.md)
-### [Data Definition Language SQL](ddl.sql)
+
+
+### [Database Class](AprilDatabase.java)
 
 
 # User Interface Design Documentation
