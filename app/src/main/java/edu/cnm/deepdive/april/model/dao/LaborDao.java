@@ -59,5 +59,5 @@ public interface LaborDao {
 
   @Delete
   Single<Integer> delete(Labor... labors);
-  
+
 }

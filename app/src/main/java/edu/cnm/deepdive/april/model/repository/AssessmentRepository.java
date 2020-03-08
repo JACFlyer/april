@@ -1,6 +1,7 @@
 package edu.cnm.deepdive.april.model.repository;
 
 import android.app.Application;
+import androidx.lifecycle.LiveData;
 import edu.cnm.deepdive.april.model.dao.AssessmentDao;
 import edu.cnm.deepdive.april.model.entity.Assessment;
 import edu.cnm.deepdive.april.service.AprilDatabase;
@@ -8,6 +9,7 @@ import io.reactivex.Single;
 import io.reactivex.SingleSource;
 import io.reactivex.schedulers.Schedulers;
 import java.util.Date;
+import java.util.List;
 
 /** Repository class declared **/
 public class AssessmentRepository {
@@ -40,9 +42,8 @@ public class AssessmentRepository {
   }
 
 
-
-
-
-
-
+  /**
+  public LiveData<List<Assessment>> get() {
+    return database.getAssessmentDao();
+  }**/
   }
